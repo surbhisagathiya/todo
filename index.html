@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="StyleSheet" href="style.css">
+    <title>To-Do</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2><i class="fas fa-clipboard-check"> </i> To-Do List </h2>
+            <div class="user-input">
+                <input id="new-task" type="text" placeholder="Enter Text">
+                <button>Submit</button>
+                <div id="errorInput"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="counter">
+        <ol id="todoList">
+            <span>Total Task : </span><span id="counter">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <span>Incomplete Task : </span><span id="incomplete_counter">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>completed Task : </span><span id="completed_counter">0</span> -->
+        </ol>
+    </div>
+
+    <div class="container">
+        <div class="to-do-items">
+            <h3>Tasks</h3>
+            <ul id="incomplete-tasks">
+                <!-- <li>
+                    <input type="checkbox">
+                    <label>Pay Bills</label>
+                    <input type="text">
+                    <button class="edit" style="float:right;"><i class="fas fa-edit"></i></button>
+                    <button class="delete" style="float:right;"><i class="fas fa-trash"></i></button>
+                </li> -->
+                <!-- <li class="editMode">
+                    <input type="checkbox">
+                    <label></label>
+                    <input type="text">
+                    <button class="edit" style="float:right;"><i class="fas fa-edit"></i></button>
+                    <button class="delete" style="float:right;"><i class="fas fa-trash"></i></button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="to-do-items">
+            <h3 style="margin-top:15px">Completed Tasks</h3>
+            <ul id="completed-tasks">
+                <!-- <li>
+                    <input type="checkbox" checked>
+                    <label>See the Doctor</label>
+                    <input type="text">
+                    <button class="edit" style="float:right;"><i class="fas fa-edit"></i></button>
+                    <button class="delete" style="float:right;"><i class="fas fa-trash"></i></button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="to-do-items todo-list">
+        </div>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

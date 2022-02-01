@@ -1,0 +1,217 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Baskerville", cursive;
+  /* font-weight: 100; */
+  background-image: linear-gradient(to right, #65dce0, #cd37cd);
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.nav h2 {
+  font-size: 2rem;
+}
+
+.user-input {
+  width: 350px;
+  text-align: center;
+}
+
+.user-input input {
+  width: 80%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-input input:focus {
+  box-shadow: 0 0 5px #e22865;
+  border: 1px solid #e22865;
+}
+
+.user-input button {
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  transition: 1s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.to-do-items {
+  width: 500px;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.edit,
+.delete {
+  border: none;
+  background-color: transparent;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#errorInput {
+  font-size: 15px;
+  padding-top: 6px;
+}
+
+li {
+  background-color: white;
+  /* display: flex; */
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+li:hover {
+  box-shadow: 0 0 20px #e22865;
+  border: 1px solid #e22865;
+}
+
+li i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav h2 {
+    margin: 10px 0;
+  }
+
+  .user-input {
+    width: 100%;
+  }
+
+  .to-do-items {
+    width: 100%;
+  }
+  .to-do-items label {
+    font-size: 16px;
+  }
+  li > input[type="text"] {
+    width: 81%;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-input input {
+    width: 74%;
+  }
+  .to-do-items label {
+    font-size: 14px;
+  }
+  li > input[type="text"] {
+    width: 75%;
+  }
+}
+
+@media (max-width: 320px) {
+  .user-input input {
+    width: 60%;
+  }
+  .to-do-items label {
+    font-size: 13px;
+  }
+}
+
+li > .delete,
+.edit {
+  float: right;
+  /* margin-top:17px; */
+}
+li > .delete:hover {
+  color: #cf2323;
+}
+
+li > .edit:hover {
+  color: #305fc5;
+}
+
+li > input[type="text"] {
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  /* margin-top: 10px; */
+  font-size: 18px;
+  border-radius: 5px;
+  padding: auto;
+  padding: 4px 10px;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: inline-block;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+/* couter */
+.counter {
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 45px;
+}
